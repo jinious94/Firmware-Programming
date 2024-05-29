@@ -1,0 +1,282 @@
+
+Button_1.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  00800100  000001a4  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000150  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  000001a4  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  000001d4  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000020  00000000  00000000  00000214  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00000974  00000000  00000000  00000234  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 0000080a  00000000  00000000  00000ba8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   00000330  00000000  00000000  000013b2  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000024  00000000  00000000  000016e4  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    0000040e  00000000  00000000  00001708  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    000001d5  00000000  00000000  00001b16  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000028  00000000  00000000  00001ceb  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	4b c0       	rjmp	.+150    	; 0x9c <__bad_interrupt>
+   6:	00 00       	nop
+   8:	49 c0       	rjmp	.+146    	; 0x9c <__bad_interrupt>
+   a:	00 00       	nop
+   c:	47 c0       	rjmp	.+142    	; 0x9c <__bad_interrupt>
+   e:	00 00       	nop
+  10:	45 c0       	rjmp	.+138    	; 0x9c <__bad_interrupt>
+  12:	00 00       	nop
+  14:	43 c0       	rjmp	.+134    	; 0x9c <__bad_interrupt>
+  16:	00 00       	nop
+  18:	41 c0       	rjmp	.+130    	; 0x9c <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	3f c0       	rjmp	.+126    	; 0x9c <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	3d c0       	rjmp	.+122    	; 0x9c <__bad_interrupt>
+  22:	00 00       	nop
+  24:	3b c0       	rjmp	.+118    	; 0x9c <__bad_interrupt>
+  26:	00 00       	nop
+  28:	39 c0       	rjmp	.+114    	; 0x9c <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	37 c0       	rjmp	.+110    	; 0x9c <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	35 c0       	rjmp	.+106    	; 0x9c <__bad_interrupt>
+  32:	00 00       	nop
+  34:	33 c0       	rjmp	.+102    	; 0x9c <__bad_interrupt>
+  36:	00 00       	nop
+  38:	31 c0       	rjmp	.+98     	; 0x9c <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	2f c0       	rjmp	.+94     	; 0x9c <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	2d c0       	rjmp	.+90     	; 0x9c <__bad_interrupt>
+  42:	00 00       	nop
+  44:	2b c0       	rjmp	.+86     	; 0x9c <__bad_interrupt>
+  46:	00 00       	nop
+  48:	29 c0       	rjmp	.+82     	; 0x9c <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	27 c0       	rjmp	.+78     	; 0x9c <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	25 c0       	rjmp	.+74     	; 0x9c <__bad_interrupt>
+  52:	00 00       	nop
+  54:	23 c0       	rjmp	.+70     	; 0x9c <__bad_interrupt>
+  56:	00 00       	nop
+  58:	21 c0       	rjmp	.+66     	; 0x9c <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	1f c0       	rjmp	.+62     	; 0x9c <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	1d c0       	rjmp	.+58     	; 0x9c <__bad_interrupt>
+  62:	00 00       	nop
+  64:	1b c0       	rjmp	.+54     	; 0x9c <__bad_interrupt>
+  66:	00 00       	nop
+  68:	19 c0       	rjmp	.+50     	; 0x9c <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	17 c0       	rjmp	.+46     	; 0x9c <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	15 c0       	rjmp	.+42     	; 0x9c <__bad_interrupt>
+  72:	00 00       	nop
+  74:	13 c0       	rjmp	.+38     	; 0x9c <__bad_interrupt>
+  76:	00 00       	nop
+  78:	11 c0       	rjmp	.+34     	; 0x9c <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	0f c0       	rjmp	.+30     	; 0x9c <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	0d c0       	rjmp	.+26     	; 0x9c <__bad_interrupt>
+  82:	00 00       	nop
+  84:	0b c0       	rjmp	.+22     	; 0x9c <__bad_interrupt>
+  86:	00 00       	nop
+  88:	09 c0       	rjmp	.+18     	; 0x9c <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+  98:	02 d0       	rcall	.+4      	; 0x9e <main>
+  9a:	58 c0       	rjmp	.+176    	; 0x14c <_exit>
+
+0000009c <__bad_interrupt>:
+  9c:	b1 cf       	rjmp	.-158    	; 0x0 <__vectors>
+
+0000009e <main>:
+#include <util/delay.h>
+
+int main(void)
+{
+	
+	DDRD = 0xff;
+  9e:	8f ef       	ldi	r24, 0xFF	; 255
+  a0:	81 bb       	out	0x11, r24	; 17
+	//DDRE &= ~(1<<DDRE5); // DDRE = 0b1110 1111;
+	DDRE = 0x00; // PORTE 전체를 입력으로 설정
+  a2:	12 b8       	out	0x02, r1	; 2
+	
+	
+	uint8_t ledData = 0x01;
+	uint8_t buttonData; // 버튼 입력을 받을 변수 설정
+	int flag = 0; // Atmega128 에서는 int가 2byte임
+	PORTD = 0x00; // LED가 꺼진 상태로 출발
+  a4:	12 ba       	out	0x12, r1	; 18
+	DDRE = 0x00; // PORTE 전체를 입력으로 설정
+	
+	
+	uint8_t ledData = 0x01;
+	uint8_t buttonData; // 버튼 입력을 받을 변수 설정
+	int flag = 0; // Atmega128 에서는 int가 2byte임
+  a6:	20 e0       	ldi	r18, 0x00	; 0
+  a8:	30 e0       	ldi	r19, 0x00	; 0
+	DDRD = 0xff;
+	//DDRE &= ~(1<<DDRE5); // DDRE = 0b1110 1111;
+	DDRE = 0x00; // PORTE 전체를 입력으로 설정
+	
+	
+	uint8_t ledData = 0x01;
+  aa:	91 e0       	ldi	r25, 0x01	; 1
+	int flag = 0; // Atmega128 에서는 int가 2byte임
+	PORTD = 0x00; // LED가 꺼진 상태로 출발
+	
+    while (1) 
+    {
+		buttonData = PINE;
+  ac:	81 b1       	in	r24, 0x01	; 1
+		
+		if((buttonData & (1<<5)) == 0){
+  ae:	85 fd       	sbrc	r24, 5
+  b0:	12 c0       	rjmp	.+36     	; 0xd6 <main+0x38>
+			ledData = (ledData >> 7) | (ledData << 1); // 전체가 다같이 움직이는게 아니라 하나만 움직이게 하기위해
+  b2:	49 2f       	mov	r20, r25
+  b4:	50 e0       	ldi	r21, 0x00	; 0
+  b6:	44 0f       	add	r20, r20
+  b8:	55 1f       	adc	r21, r21
+  ba:	99 1f       	adc	r25, r25
+  bc:	99 27       	eor	r25, r25
+  be:	99 1f       	adc	r25, r25
+  c0:	94 2b       	or	r25, r20
+			PORTD = ledData;
+  c2:	92 bb       	out	0x12, r25	; 18
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+  c4:	4f ef       	ldi	r20, 0xFF	; 255
+  c6:	53 ec       	ldi	r21, 0xC3	; 195
+  c8:	69 e0       	ldi	r22, 0x09	; 9
+  ca:	41 50       	subi	r20, 0x01	; 1
+  cc:	50 40       	sbci	r21, 0x00	; 0
+  ce:	60 40       	sbci	r22, 0x00	; 0
+  d0:	e1 f7       	brne	.-8      	; 0xca <main+0x2c>
+  d2:	00 c0       	rjmp	.+0      	; 0xd4 <main+0x36>
+  d4:	00 00       	nop
+			_delay_ms(200);	
+		}
+		
+		if ((buttonData & (1<<6)) == 0) {
+  d6:	86 fd       	sbrc	r24, 6
+  d8:	10 c0       	rjmp	.+32     	; 0xfa <main+0x5c>
+			ledData = (ledData >> 1) | (ledData << 7);
+  da:	60 e8       	ldi	r22, 0x80	; 128
+  dc:	96 9f       	mul	r25, r22
+  de:	a0 01       	movw	r20, r0
+  e0:	11 24       	eor	r1, r1
+  e2:	96 95       	lsr	r25
+  e4:	94 2b       	or	r25, r20
+			PORTD = ledData;
+  e6:	92 bb       	out	0x12, r25	; 18
+  e8:	4f ef       	ldi	r20, 0xFF	; 255
+  ea:	53 ec       	ldi	r21, 0xC3	; 195
+  ec:	69 e0       	ldi	r22, 0x09	; 9
+  ee:	41 50       	subi	r20, 0x01	; 1
+  f0:	50 40       	sbci	r21, 0x00	; 0
+  f2:	60 40       	sbci	r22, 0x00	; 0
+  f4:	e1 f7       	brne	.-8      	; 0xee <main+0x50>
+  f6:	00 c0       	rjmp	.+0      	; 0xf8 <main+0x5a>
+  f8:	00 00       	nop
+			_delay_ms(200);
+		}
+		
+		if (flag == 0) {
+  fa:	21 15       	cp	r18, r1
+  fc:	31 05       	cpc	r19, r1
+  fe:	b1 f6       	brne	.-84     	; 0xac <main+0xe>
+			// 버튼을 누르면 flag는 1
+			if((buttonData & (1<<7)) == 0) {
+ 100:	88 23       	and	r24, r24
+ 102:	1c f0       	brlt	.+6      	; 0x10a <main+0x6c>
+				flag = 1;
+ 104:	41 e0       	ldi	r20, 0x01	; 1
+ 106:	50 e0       	ldi	r21, 0x00	; 0
+ 108:	01 c0       	rjmp	.+2      	; 0x10c <main+0x6e>
+			} else {
+				// 버튼을 안 누르면 flag는 0
+				flag = 0;
+ 10a:	a9 01       	movw	r20, r18
+			}
+			
+			if (flag == 1) {
+ 10c:	41 30       	cpi	r20, 0x01	; 1
+ 10e:	51 05       	cpc	r21, r1
+ 110:	c9 f0       	breq	.+50     	; 0x144 <main+0xa6>
+ 112:	9a 01       	movw	r18, r20
+ 114:	cb cf       	rjmp	.-106    	; 0xac <main+0xe>
+				for (uint8_t i = 0 ; i < 5; i++) {
+					PORTD = 0xff;
+ 116:	4f ef       	ldi	r20, 0xFF	; 255
+ 118:	42 bb       	out	0x12, r20	; 18
+ 11a:	4f ef       	ldi	r20, 0xFF	; 255
+ 11c:	53 ec       	ldi	r21, 0xC3	; 195
+ 11e:	69 e0       	ldi	r22, 0x09	; 9
+ 120:	41 50       	subi	r20, 0x01	; 1
+ 122:	50 40       	sbci	r21, 0x00	; 0
+ 124:	60 40       	sbci	r22, 0x00	; 0
+ 126:	e1 f7       	brne	.-8      	; 0x120 <main+0x82>
+ 128:	00 c0       	rjmp	.+0      	; 0x12a <main+0x8c>
+ 12a:	00 00       	nop
+					_delay_ms(200);
+					PORTD = 0x00;
+ 12c:	12 ba       	out	0x12, r1	; 18
+ 12e:	4f ef       	ldi	r20, 0xFF	; 255
+ 130:	53 ec       	ldi	r21, 0xC3	; 195
+ 132:	69 e0       	ldi	r22, 0x09	; 9
+ 134:	41 50       	subi	r20, 0x01	; 1
+ 136:	50 40       	sbci	r21, 0x00	; 0
+ 138:	60 40       	sbci	r22, 0x00	; 0
+ 13a:	e1 f7       	brne	.-8      	; 0x134 <main+0x96>
+ 13c:	00 c0       	rjmp	.+0      	; 0x13e <main+0xa0>
+ 13e:	00 00       	nop
+				// 버튼을 안 누르면 flag는 0
+				flag = 0;
+			}
+			
+			if (flag == 1) {
+				for (uint8_t i = 0 ; i < 5; i++) {
+ 140:	8f 5f       	subi	r24, 0xFF	; 255
+ 142:	01 c0       	rjmp	.+2      	; 0x146 <main+0xa8>
+ 144:	80 e0       	ldi	r24, 0x00	; 0
+ 146:	85 30       	cpi	r24, 0x05	; 5
+ 148:	30 f3       	brcs	.-52     	; 0x116 <main+0x78>
+ 14a:	b0 cf       	rjmp	.-160    	; 0xac <main+0xe>
+
+0000014c <_exit>:
+ 14c:	f8 94       	cli
+
+0000014e <__stop_program>:
+ 14e:	ff cf       	rjmp	.-2      	; 0x14e <__stop_program>
