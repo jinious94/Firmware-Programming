@@ -22,7 +22,7 @@ C언어를 활용한
 
 ## 각 프로젝트 설명
 <details>
-    ##
+    #
     <summary>Button</summary>
 
     - 사용 언어:
