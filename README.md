@@ -1,28 +1,10 @@
 # 펌웨어 프로그래밍 
 
 ## 개요
-C언어를 활용한
-
-## 목차
-- [Button](#Button)
-- [Button_1](#Button_1)
-- [Button_2](#Button_2)
-- [Button_INT](#Button_INT)
-- [LED](#LED)
-- [LED_8](#LED_8)
-- [LED_arr](#LED_arr)
-- [LED_pointer](#LED_pointer)
-- [LED_struct](#LED_struct)
-- [FND](#FND)
-- [FND_4](#FND_4)
-- [PWM](#PWM)
-- [PWM_16](#PWM_16)
-- [CTC](#CTC)
-- [NORMAL](#NORMAL)
+C언어를 활용한 펌웨어 
 
 ## 각 프로젝트 설명
 <details>
-    #
     <summary>Button</summary>
 
     - 사용 언어:
