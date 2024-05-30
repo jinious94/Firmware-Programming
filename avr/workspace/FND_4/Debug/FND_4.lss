@@ -195,6 +195,7 @@ void FND_Display(uint16_t data) {
 	{
 		case 0:
 		// 첫번째 자리 FND 출력 -> 0번핀 LOW / 1, 2, 3 HIGH
+		// 전위차로 인해 0일때 출력되고, 1일땐 출력 x
 		FND_SELECT_PORT &= ~(1<<0); // digit 1 (천의자리) Low 0xxx
  108:	e5 e6       	ldi	r30, 0x65	; 101
  10a:	f0 e0       	ldi	r31, 0x00	; 0
@@ -435,9 +436,9 @@ int main(void)
 	FND_SELECT_PORT = 0x00;
  296:	10 92 65 00 	sts	0x0065, r1	; 0x800065 <__TEXT_REGION_LENGTH__+0x7e0065>
 	
-	uint16_t count = 0; // 
-	uint32_t timeTick = 0; //
-	uint32_t prevTime = 0; // 
+	uint16_t count = 0;
+	uint32_t timeTick = 0;
+	uint32_t prevTime = 0;
  29a:	81 2c       	mov	r8, r1
  29c:	91 2c       	mov	r9, r1
  29e:	54 01       	movw	r10, r8
@@ -445,8 +446,8 @@ int main(void)
 	FND_SELECT_DDR = 0xff;
 	FND_SELECT_PORT = 0x00;
 	
-	uint16_t count = 0; // 
-	uint32_t timeTick = 0; //
+	uint16_t count = 0;
+	uint32_t timeTick = 0;
  2a0:	c1 2c       	mov	r12, r1
  2a2:	d1 2c       	mov	r13, r1
  2a4:	76 01       	movw	r14, r12
@@ -455,15 +456,15 @@ int main(void)
 	FND_SELECT_DDR = 0xff;
 	FND_SELECT_PORT = 0x00;
 	
-	uint16_t count = 0; // 
+	uint16_t count = 0;
  2a6:	c0 e0       	ldi	r28, 0x00	; 0
  2a8:	d0 e0       	ldi	r29, 0x00	; 0
-	uint32_t timeTick = 0; //
-	uint32_t prevTime = 0; // 
+	uint32_t timeTick = 0;
+	uint32_t prevTime = 0;
 	
     while (1) 
     {
-		FND_Display(count); // 0 -> 1
+		FND_Display(count);
  2aa:	ce 01       	movw	r24, r28
  2ac:	0d df       	rcall	.-486    	; 0xc8 <FND_Display>
 		if(timeTick - prevTime > 100) {
@@ -484,7 +485,7 @@ int main(void)
 	
     while (1) 
     {
-		FND_Display(count); // 0 -> 1
+		FND_Display(count);
 		if(timeTick - prevTime > 100) {
 			prevTime = timeTick;
  2c6:	46 01       	movw	r8, r12
@@ -504,8 +505,8 @@ int main(void)
 			count++;
 		}
 		
-		_delay_ms(1);
-		timeTick++; // 1(천의자리 출력) -> 2(백의자리 출력) ->
+		_delay_ms(1); // 0.001초
+		timeTick++;
  2d6:	9f ef       	ldi	r25, 0xFF	; 255
  2d8:	c9 1a       	sub	r12, r25
  2da:	d9 0a       	sbc	r13, r25
