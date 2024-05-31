@@ -16,9 +16,10 @@ int main() {
 	// main4_13();
 	// main4_14();
 	
-	quiz_1();
-	quiz_2();
-	quiz_3();
+	quiz4_1_3();
+	quiz4_2_1();
+	quiz4_2_2();
+	quiz4_2_3();
 
 	return 0;
 }

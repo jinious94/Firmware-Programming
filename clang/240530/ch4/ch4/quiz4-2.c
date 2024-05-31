@@ -1,11 +1,11 @@
 #include <stdio.h>
 
-void quiz_1() {
+void quiz4_2_1() {
 	int res = sizeof(short) > sizeof(long) ? 1 : 0;
 	printf("%s \n", res == 1 ? "short" : "long");
 }
 
-void quiz_2() {
+void quiz4_2_2() {
 	int seats = 70;
 	int audience = 65;
 	double rate;
@@ -14,7 +14,7 @@ void quiz_2() {
 	printf("¿‘¿Â∑¸ : %.1lf%%\n", rate);
 }
 
-void quiz_3() {
+void quiz4_2_3() {
 	int hour, min, sec;
 	double time = 3.76;
 	double res;
