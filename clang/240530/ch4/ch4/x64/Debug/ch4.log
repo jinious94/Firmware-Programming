@@ -1,3 +1,0 @@
-﻿  quiz4-1.c
-C:\SoC_workspace\clang\240530\ch4\ch4\quiz4-1.c(17,9): warning C4477: 'printf' : 서식 문자열 '%lu'에 'unsigned long' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'double'입니다.
-  ch4.vcxproj -> C:\SoC_workspace\clang\240530\ch4\x64\Debug\ch4.exe
