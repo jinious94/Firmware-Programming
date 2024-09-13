@@ -19,7 +19,7 @@ int main(void)
     {
 		buttonData = PINE;
 		
-		if((buttonData & (1<<5)) == 0){
+		if((buttonData & (1<<5)) == 0){ // 풀업이기 때문에 누르면 0
 			ledData = (ledData >> 7) | (ledData << 1); // 전체가 다같이 움직이는게 아니라 하나만 움직이게 하기위해
 			PORTD = ledData;
 			_delay_ms(200);	

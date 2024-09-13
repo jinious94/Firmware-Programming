@@ -14,7 +14,7 @@ uint8_t Button_getState(Button *button) {
 		_delay_ms(50);
 		button->prevState = PUSHED;
 		return ACT_PUSHED;
-		} else if ((curState != PUSHED) && (button->prevState == PUSHED)) {
+	} else if ((curState != PUSHED) && (button->prevState == PUSHED)) {
 		_delay_ms(50);
 		button->prevState = RELEASED;
 		return ACT_RELEASED;
